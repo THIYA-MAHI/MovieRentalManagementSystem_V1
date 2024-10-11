@@ -41,7 +41,7 @@ namespace MovieRentalManagementSystem
                         }
                         break;
 
-                        break;
+                        
                     case 3:
                         updateMovie(manager);
                         Console.Clear();
