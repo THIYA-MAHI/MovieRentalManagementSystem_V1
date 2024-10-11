@@ -34,6 +34,7 @@ namespace MovieRentalManagementSystem
         public override string ToString()
         {
             return $"movieIdId: {MovieId}, title: {Title}, director: {Director}, rentalPrice: {RentalPrice}";
+            return $"{MOVIE_ID: "MOVIE_001", Title: "Titanic" , Director: "James Cameroon", RentalPrice: 'James Cameroon' }"
         }
 
         public virtual string DisplayMovieInfo()

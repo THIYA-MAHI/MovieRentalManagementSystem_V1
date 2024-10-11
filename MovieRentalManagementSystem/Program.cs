@@ -35,6 +35,11 @@ namespace MovieRentalManagementSystem
                         break;
                     case 2:
                         manager.ReadMovie();
+                        foreach (var movierec in movies)
+                        {
+                            Console.WriteLine(movierec.DisplayMovieInfo());
+                        }
+                        break;
 
                         break;
                     case 3:
@@ -73,6 +78,8 @@ namespace MovieRentalManagementSystem
 
             Console.WriteLine("4. enter the movie Rental Price");
             decimal rentalPrice = decimal.Parse(Console.ReadLine());
+            manager.ValidateMovieRentalPrice(price);
+
 
             manager1.CreateMovie(movieId, movieTitle, movieDirector, rentalPrice);
         }
@@ -102,6 +109,6 @@ namespace MovieRentalManagementSystem
             manager1.DeleteMovie(movieId);
         }
 
-
+       
     }
 }
